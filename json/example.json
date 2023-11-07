@@ -1,0 +1,22 @@
+{
+    "data": [
+        {
+            "id": "1",
+            "Name":"",
+            "Years Old":"24 years old",
+            "Marital Status":"Single"
+        },
+        {
+            "id": "2",
+            "Nombre":"",
+            "Years Old":"24 years old",
+            "Marital Status":"Married"
+        },
+        {
+            "id": "3",
+            "Nombre":"",
+            "Years Old":"24 years old",
+            "Marital Status":"Separated"
+        }
+    ]
+}

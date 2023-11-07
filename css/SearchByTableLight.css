@@ -1,0 +1,99 @@
+:root{
+    --bg-tableSearchGlobal:    #265171;
+    --bg-tableSearchReduce:    rgba(0, 136, 177, 0.1);
+    --bg-tableSearchHeader:    #fafafa;
+    --bg-tableSearchBody:      #eeeeee;
+    --txtBtn-tableSearch:      #dbdbdb;
+    --bgBtn-tableSearchGlobal: #2e5e7f;
+    --txtBody-tableSearch:     #363636;
+}
+
+div.showTableSearch{
+    display: block;
+    position: absolute;
+    background-color: var(--bg-tableSearchHeader);
+    z-index: 99999;
+    border: 1px solid var(--bgBtn-tableSearchGlobal);
+    border-radius: 0.5rem;
+    width: max-content;
+}
+
+table.tableSearch{
+    width: 100%;
+    border-spacing: 0;
+}
+
+table.tableSearch th:first-of-type{
+    border-top-left-radius: .5rem;
+}
+
+table.tableSearch th:last-of-type{
+    border-top-right-radius: .5rem;
+}
+
+table.tableSearch tbody > :nth-of-type(odd){
+    background-color: var(--bg-tableSearchBody);
+    filter: brightness(103%);
+}
+
+table.tableSearch tbody tr:last-of-type td:first-of-type{
+    border-bottom-left-radius: .5rem;
+}
+
+table.tableSearch tbody tr:last-of-type td:last-of-type{
+    border-bottom-right-radius: .5rem;
+}
+
+table.tableSearch th, table.tableSearch td{
+    border-color: var(--bg-tableSearchReduce);
+    border-style: solid;
+    border-width: 0.1rem;
+}
+
+table.tableSearch thead{
+    background-color: var(--bg-tableSearchHeader);
+}
+table.tableSearch thead th{
+    background-color: var(--bg-tableSearchGlobal);
+    color: white;
+    border-color: white;
+    padding: .5rem;
+    text-align: center;
+}
+
+table.tableSearch tbody{
+    background-color: var(--bg-tableSearchBody);
+}
+table.tableSearch tbody button, table.tableSearch tbody a{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: var(--bgBtn-tableSearchGlobal);
+    border: none;
+    border-radius: 0.5rem;
+    color: var(--txtBtn-tableSearch);
+    text-decoration: none;
+    font-weight: 800;
+    padding: 0.5rem 2rem;
+    max-width: 0.5rem;
+    max-height: 2rem;
+    margin: 0;
+}
+table.tableSearch tbody button:hover, table.tableSearch tbody a:hover{
+    filter: brightness(85%);
+    cursor: pointer;
+}
+table.tableSearch tbody td{
+    text-align: center;
+    color: var(--txtBody-tableSearch);
+}
+table.tableSearch tbody td:first-of-type{
+    border-bottom: 0.2rem solid var(--bg-tableSearchGlobal);
+    color: var(--txtBody-tableSearch);
+    font-weight: 800;
+}
+table.tableSearch tbody tr:last-of-type td{
+    border: 0.1rem solid var(--bg-tableSearchReduce);
+}
